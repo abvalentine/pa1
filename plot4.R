@@ -11,7 +11,7 @@ png(file="plot4.png")
 # create charts
 par(mfrow = c(2, 2))
 
-with(data, plot(datetime, Global_active_power, type="n"))
+with(data, plot(datetime, Global_active_power, type="n", xlab="", ylab="Global Active Power (kilowatts)"))
 with(data, lines(datetime, Global_active_power))
 
 with(data, plot(datetime, Voltage, type="n", xlab="datetime"))
